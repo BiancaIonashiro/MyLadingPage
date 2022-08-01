@@ -3,30 +3,46 @@
   <head>
     <meta charset="utf-8" />
     
-    <title>Fundamentos - display flex</title>
+    <title>Flexbox css - </title>
     <style>
+      .container {
+        display: flex;
+        border: 1px solid black;
+        max-width: 350px;
+      }
+     
+    .item {
+      background-color: blueviolet;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      }
+
       .flex {
-        max-width: 300px;
-        padding: 10px;
-        border: 2px solid black
+        flex: 1;
       }
-      .item{
-        background-color: aqua;
-        margin: 5px;
+      .center{
+        align-items: center;
+        flex: 1;
       }
-    </style>    
+     </style> 
+  
     <link rel="stylesheet" href="./css/style.css" />
 
   </head>
-  
+
   <body>
-    <div class="flex">
-      <div class="item">item 1</div>
-      <div class="item">item 2</div>
-      <div class="item">item 3</div>
+<selection class="container center flex">
+<div class="container">
+  <div class="item">1</div>
+    <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
     </div>
+</selection>
     
-    <header>
+<header>
       <img src="img/foto_casal.jpeg" alt="Foto com o Gabriel" class="photo"/>
       <h1 id="title">Bianca Ionashiro</h1>
     </header>
