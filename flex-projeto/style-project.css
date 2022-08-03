@@ -16,7 +16,7 @@ ul li a {
 
 div img {
   display: block;
-  width: 100%;
+  width: 420px;
 }
 
 .flex-container {
@@ -25,6 +25,7 @@ div img {
   margin: auto;
   width: 100%;
   min-width: 320px;
+  flex-direction: row;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
   padding: 10px;
 }
 
-header .list-items {
+.list-items {
   display: flex;
   max-width: 260px;
   width: 100%;
@@ -52,19 +53,29 @@ header .menu {
   justify-content: space-between;
 }
 
+.apresentacao h1 {
+  color: #122a57;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
 .apresentacao {
   height: 100vh;
   align-items: center;
   justify-content: space-between;
 }
 
-.apresentacao .texto-apresentacao {
-  min-height: 20px;
-}
-
-.texto-apresentacao h1 {
-  color: #122a57;
-  font-size: 48px;
+.texto-apresentacao a {
+  background-color: #122a57;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
