@@ -1,0 +1,92 @@
+body {
+  background: black;
+  font-family: Verdana;
+  max-width: 1300px;
+  flex-direction: row;
+}
+
+.myProfile {
+  display: flex;
+  color: #ff0080;
+  align-items: center;
+  text-align: justify;
+}
+
+.myProfile img {
+  border: 2px solid gray;
+  display: flex;
+  max-width: 300px;
+  border-radius: 500px;
+  margin: 100px;
+}
+
+.tema1 {
+  color: #ff0080
+  }
+
+  .tema2 {
+    color:#ff0080
+  }
+.conteudo {
+  display: flex;
+  margin: 0 10%;
+  flex-direction: column;
+  color: gray;
+  text-align: justify;
+}
+
+.languages {
+  display: flex;
+  color: gray;
+  flex: start;
+  justify-content: space-around;
+}
+
+a,
+a label {
+  cursor: pointer;
+}
+
+.languageImage {
+  width: 100px;
+  height: 100px;
+}
+
+.languageItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageItemContainer > p {
+  font-weight: bold;
+}
+
+.rodape { 
+  background-color: #ff0080;
+  display: flex;
+  color: gray;
+  justify-content:end;
+}
+
+a,
+a label {
+  cursor: pointer;
+}
+
+.infoImage {
+  width: 50px;
+  height: 50px;
+  text-align: justify;
+}
+
+.contactItemContainer {
+  display:flex;
+  margin-right: 10%;
+  flex-direction: row;
+}
+
+.contactItemContainer > p {
+  font-weight: bold;
+}
