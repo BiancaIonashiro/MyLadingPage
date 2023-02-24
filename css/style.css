@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
   font-family: Verdana;
   max-width: 1300px;
   flex-direction: row;
@@ -7,13 +7,13 @@ body {
 
 .myProfile {
   display: flex;
-  color: #ff0080;
+  color: black;
   align-items: center;
   text-align: justify;
 }
 
 .myProfile img {
-  border: 2px solid gray;
+  border: 2px solid black;
   display: flex;
   max-width: 300px;
   border-radius: 500px;
