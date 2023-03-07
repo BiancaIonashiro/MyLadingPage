@@ -119,6 +119,10 @@ h3 {
     background: #379956;
   }
 
+  #whatsapp {
+    color: white;
+  }
+
   .openModal:hover {
     cursor: pointer;
   }
