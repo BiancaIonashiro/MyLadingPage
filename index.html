@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>🌟 Main Profile 🌟</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
     <section class="ladingPage">
       <div class="selfPresentation">
         <h3 id="mobile1">OLÁ, SEJA BEM VINDO(A) 🤩</h3>
-        <img class="photo" src="./img/Profile.jpg" alt="Foto da Bianca" />
+        <img class="photo" src="./assets/Profile.jpg" alt="Foto da Bianca" />
       </div>
       <div class="selfPresentationContent">
         <h3 id="desktop1">OLÁ, SEJA BEM VINDO(A) 🤩</h3>
@@ -31,16 +31,16 @@
           <ul>
             <li>
               <a href="mailto:bionashiro@gmail.com"
-                ><img src="./img/Gmail.png" alt="Gmail" /> E-mail<span
-                  ><i class="fa fa-gmail"></i></span
+                ><img src="./assets/Gmail.png" alt="Gmail" /> E-mail<span
+                  ><i class="fa-brands fa-gmail"></i></span
               ></a>
             </li>
             <li>
               <a
                 href="https://github.com/BiancaIonashiro?tab=repositories"
                 target="_blank"
-                ><img src="./img/GitHub.png" alt="GitHub" /> GitHub<span
-                  ><i class="fa fa-github"></i
+                ><img src="./assets/GitHub.png" alt="GitHub" /> GitHub<span
+                  ><i class="fa-brands fa-github"></i
                 ></span>
               </a>
             </li>
@@ -48,19 +48,30 @@
               <a
                 href="https://www.linkedin.com/in/bianca-cristina-54907b268"
                 target="_blank"
-                ><img src="./img/Linkedin.png" alt="LinkedIn" /> LinkedIn<span
-                  ><i class="fa fa-linkedin"></i
-                ></span>
+                ><img src="./assets/Linkedin.png" alt="LinkedIn" />
+                LinkedIn<span><i class="fa-brands fa-linkedin"></i></span>
               </a>
             </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img src="./img/WhatsApp.png" alt="WhatsApp" /> WhatsApp<span
-                  ><i class="fa fa-whatsapp"></i
-                ></span>
-              </a>
+            <li id="whatsapp">
+              <img src="./assets/WhatsApp.png" alt="WhatsApp" /><label
+                for="modalOption"
+                class="openModal"
+              >
+                WhatsApp</label
+              >
+              <span><i class="fa-brands fa-whatsapp"></i></span>
             </li>
           </ul>
+          <input type="checkbox" id="modalOption" class="checkboxModal" />
+          <div class="modal">
+            <label for="modalOption" class="closeModal">X</label>
+            <div class="contentModal">
+              <img
+                src="./assets/Qrcode-whatsapp.jpg"
+                alt="Qrcode"
+              /><span></span>
+            </div>
+          </div>
         </nav>
       </div>
     </section>

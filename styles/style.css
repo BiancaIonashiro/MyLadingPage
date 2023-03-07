@@ -7,7 +7,7 @@
 
 body,
 html {
-  background-image: url(./img/LadingPage.jpg);
+  background-image: url(../assets/LadingPage.jpg);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -19,8 +19,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #810ca8;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 5vh;
 }
 
 h3 {
@@ -74,16 +73,16 @@ h3 {
   }
 
   .containerIconsDesktop {
-    width: 220px;
+    width: 195px;
     height: auto;
     position: absolute;
-    top: 2.8%;
+    top: 5%;
     right: -150px;
   }
 
   .containerIconsDesktop img {
-    width: 50%;
-    height: 50%;
+    width: 28px;
+    height: auto;
   }
 
   .containerIconsDesktop ul {
@@ -92,7 +91,6 @@ h3 {
 
   .containerIconsDesktop ul li {
     display: block;
-    background: gold;
     padding: 10px;
     height: 50px;
     position: relative;
@@ -106,7 +104,7 @@ h3 {
   }
 
   .containerIconsDesktop ul li:nth-child(1) {
-    background: red;
+    background: #ff5c58;
   }
 
   .containerIconsDesktop ul li:nth-child(2) {
@@ -114,26 +112,66 @@ h3 {
   }
 
   .containerIconsDesktop ul li:nth-child(3) {
-    background: darkblue;
+    background: #0f6292;
   }
 
   .containerIconsDesktop ul li:nth-child(4) {
-    background: green;
+    background: #379956;
   }
 
+  .openModal:hover {
+    cursor: pointer;
+  }
+
+  .checkboxModal {
+    display: none;
+  }
+
+  #modalOption:checked + .modal {
+    display: flex;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+
+  .modal .closeModal:hover {
+    cursor: pointer;
+    color: red;
+  }
+
+  .modal .contentModal {
+    width: 75%;
+    height: 50%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 15px white;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .modal .contentModal {
+    display: block;
+  }
   .containerIconsDesktop ul li span {
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     display: block;
     right: 18px;
-    padding: 10px;
+    padding: 70px;
   }
 
   .containerIconsDesktop ul li:hover {
     cursor: pointer;
     background: black;
-    border-right: 40px solid #810ca8;
-    transform: translateX(-150px);
+    transform: translateX(-112px);
   }
 }
