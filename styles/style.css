@@ -17,15 +17,26 @@ html {
 header,
 footer {
   display: flex;
-  flex-direction: column;
-  background-color: #810ca8;
-  height: 5vh;
+  flex-direction: row;
+  border-top: 4vh solid #e7ab9a;
+  border-bottom: 4vh solid #460c68;
 }
 
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 50px;
+}
+
+#desktop1,
+#desktop2 {
+  display: none;
+}
+
+.ladingPage {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 5.5% 5%;
 }
 
 .selfPresentation,
@@ -36,12 +47,6 @@ h3 {
   text-align: center;
 }
 
-.ladingPage {
-  display: flex;
-  flex-direction: column;
-  margin: 2% 5% 2% 5%;
-}
-
 .photo {
   margin: 5% 25% 5% 25%;
   border-radius: 100%;
@@ -50,9 +55,62 @@ h3 {
   height: 50%;
 }
 
-#desktop1,
-#desktop2 {
-  display: none;
+.containerIconsMobile,
+.containerIconsDesktop {
+  width: 195px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: -150px;
+}
+
+.containerIconsMobile img {
+  width: 28px;
+  height: auto;
+}
+
+.containerIconsMobile ul {
+  list-style: none;
+}
+
+.containerIconsMobile ul li {
+  display: block;
+  padding: 10px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.containerIconsMobile ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.containerIconsMobile ul li:nth-child(1) {
+  background: #ff5c58;
+}
+
+.containerIconsMobile ul li:nth-child(2) {
+  background: black;
+}
+
+.containerIconsMobile ul li:nth-child(3) {
+  background: #0f6292;
+}
+
+.containerIconsMobile ul li:nth-child(4) {
+  background: #379956;
+}
+
+.containerIconsMobile ul li span {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  display: block;
+  right: 18px;
+  padding: 70px;
 }
 
 /*CSS-desktop*/
@@ -76,7 +134,7 @@ h3 {
     width: 195px;
     height: auto;
     position: absolute;
-    top: 5%;
+    top: 56px;
     right: -150px;
   }
 
@@ -119,51 +177,6 @@ h3 {
     background: #379956;
   }
 
-  #whatsapp {
-    color: white;
-  }
-
-  .openModal:hover {
-    cursor: pointer;
-  }
-
-  .checkboxModal {
-    display: none;
-  }
-
-  #modalOption:checked + .modal {
-    display: flex;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-  }
-
-  .modal .closeModal:hover {
-    cursor: pointer;
-    color: red;
-  }
-
-  .modal .contentModal {
-    width: 75%;
-    height: 50%;
-    border: 1px solid blueviolet;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 5px 5px 15px white;
-    overflow: auto;
-    text-align: center;
-  }
-
-  .modal .contentModal {
-    display: block;
-  }
   .containerIconsDesktop ul li span {
     position: relative;
     top: 0;
@@ -175,7 +188,12 @@ h3 {
 
   .containerIconsDesktop ul li:hover {
     cursor: pointer;
-    background: black;
+    background-image: linear-gradient(
+      -225deg,
+      #ff3cac 0%,
+      #562b7c 52%,
+      #2b86c5 100%
+    );
     transform: translateX(-112px);
   }
 }
