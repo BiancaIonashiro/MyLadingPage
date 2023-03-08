@@ -28,6 +28,10 @@ h3 {
   text-shadow: 0px 0px 50px;
 }
 
+p {
+  display: none;
+}
+
 #desktop1,
 #desktop2 {
   display: none;
@@ -36,6 +40,7 @@ h3 {
 .ladingPage {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 2.2% 4% 2.2% 4%;
 }
 
@@ -57,12 +62,7 @@ h3 {
 
 .containerIconsMobile img,
 .containerIconsDesktop img {
-  width: 30px;
   height: 30px;
-}
-
-.containerIconsMobile {
-  margin: 50px 25px 56px 120px;
 }
 
 .containerIconsMobile ul,
@@ -70,19 +70,24 @@ h3 {
   list-style: none;
 }
 
-#b1,
-#b2,
-#b3,
-#b4 {
+.containerIconsMobile ul li {
+  display: inline-flex;
+  margin: 50px 0 50px 0;
+  padding: 8px;
   background-color: #e15fed;
   width: 50px;
   height: 50px;
   border: 2px solid #460c68;
-  border-radius: 300px;
+  border-radius: 100px;
 }
 
 /*CSS-desktop*/
 @media screen and (min-width: 768px) {
+  p {
+    display: inline;
+    justify-content: flex-end;
+  }
+
   .ladingPage {
     flex-direction: row;
     align-items: center;
